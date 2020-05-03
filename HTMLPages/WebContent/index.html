@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>My Portal</title>
+<link href="css/style.css" type="text/css" rel="stylesheet">
+</head>
+
+<body>
+<div onclick="popup('hide','pop')" id="pop" class="pop">
+    <div>
+        <h3>Header Content</h3>
+        <p>
+            <a href="http://www.google.com/">CLICK ME</a>
+        </p>
+    </div>
+</div>
+
+<header id="header">
+ <ul id="menu-bar">
+ <li class="active"><a href="#">HOME</a></li>
+ <li><a href="#">ABOUT US</a></li>
+ <li><a href="#">DASHBOARD</a></li>
+</ul>
+</header>
+
+<section id="section" class="center">
+  
+  <div class="sidenav">
+  <a href="#about">My Tasks</a>
+  <a href="#services">Team Tasks</a>
+  <a href="#clients">All Tasks</a>
+  </div>
+ <content>
+        <nav id="nav">
+            <ul>
+                <li><a href="#" onclick="popup('show','pop')" title="LINK_TITLE">
+                <h1 class="fa">&#xf109;</h1>Portal 1</a></li>
+                <li><a href="#" onclick="popup('show','pop')" title="LINK_TITLE"><h1 class="fa">&#xf109;</h1>Portal 2</a></li>
+                <li><a href="#" onclick="popup('show','pop')" title="LINK_TITLE"><h1 class="fa">&#xf109;</h1>Portal 3</a></li>
+                <li><a href="#" onclick="popup('show','pop')" title="LINK_TITLE"><h1 class="fa">&#xf109;</h1>Portal 4</a></li>
+                <li><a href="#" onclick="popup('show','pop')" title="LINK_TITLE"><h1 class="fa">&#xf109;</h1>Portal 6</a></li>
+                <li><a href="#" onclick="popup('show','pop')" title="LINK_TITLE"><h1 class="fa">&#xf109;</h1>Portal 6</a></li>
+                <li><a href="#" onclick="popup('show','pop')" title="LINK_TITLE"><h1 class="fa">&#xf109;</h1>Portal 7</a></li>
+                <li><a href="#" onclick="popup('show','pop')" title="LINK_TITLE"><h1 class="fa">&#xf109;</h1>Portal 8</a></li>
+                <li><a href="#" onclick="popup('show','pop')" title="LINK_TITLE"><h1 class="fa">&#xf109;</h1>Portal 9</a></li>
+                <li><a href="#" onclick="popup('show','pop')" title="LINK_TITLE"><h1 class="fa">&#xf109;</h1>Portal 9</a></li>
+            </ul>
+        </nav>
+    </content>
+</section>
+
+<footer id="footer">
+    <div class="center">
+        Copyright &copy; 2020
+    </div>
+</footer>
+
+<script type="text/javascript">
+    function popup(type,id) {
+        var element = document.getElementById(id);
+        if (type == "show") {
+            element.style.visibility="visible";
+            element.style.opacity=1;
+        }
+        else {
+            element.style.visibility="hidden";
+            element.style.opacity=0;
+        }
+    }
+</script>
+
+</body>
+</html>
