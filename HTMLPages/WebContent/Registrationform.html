@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>HtML5 title</title>
+        <style type="text/css">
+        .form-submit-button {
+			background: #0066A2;
+			color: white;
+			border-style: outset;
+			border-color: #0066A2;
+			height: 33px;
+    		width: 84px;
+			font: bold 15px arial, sans-serif;
+			text-shadow:none;
+			}
+	.form-submit-button:hover {
+		background: #016ABC;
+		color: #fff;
+		border: 1px solid #eee;
+		border-radius: 20px;
+		box-shadow: 5px 5px 5px #eee;
+		text-shadow:none;
+		}
+			
+    </style>
+    </head>
+    <body style="background-color: #1FCBE9">
+    <div align="center">
+       <h2 style="color: white;font-weight: bold; text-decoration: underline;">User Information</h2>
+        <form>
+            <table>
+                <tr>
+                    <td>
+                        Name:
+                    </td>
+                    <td>
+                        <input type="text" name="firstname" placeholder="Enter Name" autofocus="autofocus"  autocomplete="on" required />
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td>
+                        Email:
+                    </td>
+                    <td>
+                        <input type="email" name="email" placeholder="Enter Email Id" pattern="[a-z0-9._%+-]+@hcl.com" required />
+                    </td>
+                </tr>
+                
+                <!--  DataList-->
+                 <tr>
+                    <td>
+                        SkillSet:
+                    </td>
+                    <td>
+                        <input list="skillset">
+                        <datalist id="skillset">
+                            <option value="Java">(Java)</option>
+                            <option value="SpringBoot">(Spring Boot)</option>
+                            <option value="Struts">(Struts)</option>
+                            <option value="Java8">(Java8)</option>
+                        </datalist>
+                    </td>
+                </tr>
+                
+                <!-- Select Box -->
+                <tr>
+                <td>Language</td>
+                <td>
+                <select name="Language">
+                   <option value="Eng">English</option>
+                   <option value="hindi">Hindi</option>
+                   <option value="Marati">marati</option>
+                   <option value=tamil>Tamil</option>
+                  </select>
+                  </td>
+                </tr>
+                <tr>
+                    <td>
+                        Age:
+                    </td>
+                    <td>
+                        <input type="number" name="age" min="0" max="10" value="5" required />
+                    </td>
+                </tr>
+               <tr>
+               <td>Pan Card</td>
+               <td><input type="text" placeholder="Enter pan card" name="pancard" onfocus="" required="required" pattern="[A-Za-z0-9]+" maxlength="10" autocomplete="off" autofocus="autofocus" >  </td>
+               </tr>
+                <tr>
+                    <td>
+                        <input type="submit" class="form-submit-button" />
+                    </td>
+                    <td> <input type="reset" class="form-submit-button" /></td>
+                </tr>
+            </table>            
+            </form>
+        </div>
+    </body>
+</html>
