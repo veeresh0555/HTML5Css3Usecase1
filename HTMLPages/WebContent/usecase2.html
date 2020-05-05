@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>HTML5+CSS3</title>
+<style type="text/css">
+		img {
+            border: 2px solid gray;
+            border-radius: 50%;
+             box-shadow:  1px 1px 10px gray;
+             margin: 30px;
+        }
+       /*  .container {
+            display: flex;
+            border: 2px solid gray;
+            margin: 25px;
+            padding: 10px;
+            box-shadow:  1px 1px 10px gray;
+            transition:  2s;
+            transition-delay: 2s;
+        } */
+        
+       
+       .header {
+  		background-image: linear-gradient(to right, red,orange,yellow,green,blue,indigo,violet);
+  		text-align:center;
+  		margin:auto;color:#888888;
+  		font-size:40px;
+  		font-weight:bold;
+        }
+        
+        .footer{
+        background-image: linear-gradient(to right, red,orange,yellow,green,blue,indigo,violet);
+  		text-align:center;
+  		margin:auto;color:#888888;
+  		font-size:40px;
+  		font-weight:bold;
+        }
+        
+        img:hover {
+           border: 2px solid red; 
+           border-radius: 50%; 
+           box-shadow:  1px 1px 10px red; 
+            margin: 30px;
+        }
+        span{
+        background-color: yellow;
+		padding: 20px;
+		display: none;
+		
+        }
+        img:hover + span{
+           display: block;
+        }
+
+</style>
+
+
+</head>
+<body>
+<div class="header">
+This is header
+</div>
+ <div class="container">
+        <img src="download.jpeg" alt="demo" />
+        <span>first image</span>
+        <img src="download.jpeg" alt="demo" />
+        <span>second image</span>
+        <img src="download.jpeg" alt="demo" />
+        <span>third image</span>
+        <img src="download.jpeg" alt="demo" />
+        <span>4th image</span>
+        <img src="download.jpeg" alt="demo" />
+        <span>5th image</span>
+        <img src="download.jpeg" alt="demo" />
+        <span>6th image</span>
+        <img src="download.jpeg" alt="demo" />
+        <span>7th image</span>
+        <img src="download.jpeg" alt="demo" />
+        <span>8 image</span>
+</div>
+
+<div class="footer">
+copyright@2020</div>
+</body>
+</html>
